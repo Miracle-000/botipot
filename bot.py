@@ -6,9 +6,10 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import Message
 from aiogram.filters import Command
 import math
+import os
 
 # Твой токен бота (замени на свой)
-TOKEN = "7570400659:AAEE4tWjqHNns_eTZ2qGUcNQb6MGTd_3-kw"
+TOKEN = os.getenv("BOT_TOKEN")
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
